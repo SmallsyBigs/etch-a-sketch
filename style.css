@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(209, 209, 209, 0.664);
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 22px;
+    color: rgba(255, 0, 0, 0.644);
+    /* text-align: center; */
+    width: 18%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.mainContainer {
+    display: flex;
+    margin-top: 5em;
+}
+
+.toolBar {
+
+}
+
+.gridContainer {
+    display: flex;
+    width: 496px;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+    border: 5px solid rgba(255, 0, 0, 0.637);
+}
+
+.gameGrid{
+    background-color: rgb(128, 128, 128);
+    height: 120px;
+    width: 120px;
+    border: 2px solid rgba(255, 0, 0, 0.329);
+}
