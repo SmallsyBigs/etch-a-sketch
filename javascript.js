@@ -1,7 +1,11 @@
-const gridContainer = document.querySelector(".gridContainer");
+const gridContainer = document.querySelector(".mainContainer");
+const gameGrid = document.createElement("div");
+gameGrid.classList.add("gameGrid");
+gridContainer.appendChild(gameGrid);
 
-for(let i = 0; i < 16; i++){
-const gridDiv = document.createElement("div");
-gridDiv.classList.add("gameGrid");
-gridContainer.appendChild(gridDiv);
+gameGrid.onmouseenter = function(){
+    gameGrid.setAttribute("style", "background-color:red;");
+}
+gameGrid.onmouseout = function(){
+    gameGrid.setAttribute("style", "background-color:blue;");
 }

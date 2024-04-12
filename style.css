@@ -20,21 +20,19 @@ header {
 }
 
 .toolBar {
-
+    
 }
 
 .gridContainer {
     display: flex;
-    width: 496px;
     flex-wrap: wrap;
     margin-left:auto;
     margin-right:auto;
-    border: 5px solid rgba(255, 0, 0, 0.637);
 }
 
 .gameGrid{
     background-color: rgb(128, 128, 128);
-    height: 120px;
-    width: 120px;
+    height: 30px;
+    width: 30px;
     border: 2px solid rgba(255, 0, 0, 0.329);
 }
