@@ -8,7 +8,8 @@ gameGrid.onmouseenter = function(){
     gameGrid.style.backgroundColor = "red";
 }
 gameGrid.onmouseout = function(){
-    gameGrid.style.backgroundColor = "blue";
+    const newRandomColor = "#" + Math.floor(Math.random()*16777215).toString(16)
+    gameGrid.style.backgroundColor = newRandomColor
 }
 }
 
