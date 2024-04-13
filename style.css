@@ -1,35 +1,50 @@
 body {
     background-color: rgba(209, 209, 209, 0.664);
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    font-size: 22px;
     color: rgba(255, 0, 0, 0.644);
-    width: 18%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
+    font-size: 30px;
 }
 
 .mainContainer {
-    display: flex;
     margin-top: 5em;
+    align-items: center;
 }
 
 .toolBar {
+    max-width: 10%;
+    margin-top: 10em;
+    margin-left: 3em;
+}
 
+button {
+    padding: 3em;
+    margin: 1.5em;
+    width: 10em;
+    text-align: center;
+    font-weight: bold;
+    
 }
 
 .gridContainer {
     display: flex;
     flex-wrap: wrap;
     border: 5px solid rgba(255, 0, 0, 0.637);
+    max-width: 512px;
+    position:fixed;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .gameGrid{
     background-color: rgb(128, 128, 128);
+    border: solid rgba(177, 18, 18, 0.459) 1px;
     height: 30px;
     width: 30px;
 } 
