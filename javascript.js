@@ -24,7 +24,7 @@ gameGrid.addEventListener("mouseleave", function(){
 const newGridBtn = document.querySelector("#getSizeBtn");
 
 // Code's purpuse is to provide choose size functionality
-// in order for the user to be ablo to dynamically change grid's size
+// in order for the user to be able to dynamically change grid's size
 
 newGridBtn.addEventListener("click", function(){
     
