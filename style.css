@@ -36,7 +36,8 @@ button {
     display: flex;
     flex-wrap: wrap;
     border: 5px solid rgba(255, 0, 0, 0.637);
-    max-width: 512px;
+    width: 600px;
+    height: 600px;
     position:fixed;
     top: 25%;
     left: 0;
@@ -46,7 +47,7 @@ button {
 
 .gameGrid{
     background-color: rgb(128, 128, 128);
-    border: solid rgba(177, 18, 18, 0.459) 1px;
-    height: 30px;
-    width: 30px;
-} 
+    outline: solid rgba(177, 18, 18, 0.459) 1px;
+    width: calc(100% / 16);
+    height: calc(100% / 16);
+}
