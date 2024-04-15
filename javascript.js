@@ -4,6 +4,7 @@ const gridContainer = document.querySelector(".gridContainer");
 // and basic functionalities
 
 for(let i = 0; i < 256; i++){
+
 const gameGrid = document.createElement("div");
 gameGrid.classList.add("gameGrid");
 gridContainer.appendChild(gameGrid);
@@ -16,6 +17,7 @@ gameGrid.addEventListener("mouseleave", function(){
     const newRandomColor = "#" + Math.floor(Math.random()*16777215).toString(16)
     gameGrid.style.backgroundColor = newRandomColor
     }, {once : true})
+
 }
 
 
@@ -25,6 +27,7 @@ const newGridBtn = document.querySelector("#getSizeBtn");
 // in order for the user to be ablo to dynamically change grid's size
 
 newGridBtn.addEventListener("click", function(){
+    
     newSize = prompt("Choose number per side (max:16)");
     if(newSize > 0 && newSize <= 16) {
     newSize = newSize * newSize
@@ -32,6 +35,11 @@ newGridBtn.addEventListener("click", function(){
     else{
         return alert("Wrong number :(");
     }
+
+    while (gridContainer.firstChild){
+        gridContainer.firstChild.remove();
+    }
+
     for(let i = 0; i < newSize; i++){
         const gameGrid = document.createElement("div");
         gameGrid.classList.add("gameGrid");
