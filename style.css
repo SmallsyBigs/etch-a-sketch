@@ -47,7 +47,7 @@ button {
 }
 
 .gameGrid{
-    background-color: rgb(128, 128, 128);
+    background-color: grey;
     outline: solid rgba(177, 18, 18, 0.459) 1px;
     width: calc(100% / 16);
     height: calc(100% / 16);
