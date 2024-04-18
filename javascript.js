@@ -25,3 +25,7 @@ sizeBtn.addEventListener("click", function(){
     resetGrid();
     makeGrid();
 })
+
+resetBtn.addEventListener("click", function(){
+    resetGrid()
+})
